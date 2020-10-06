@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body onload="startFunction()">
+    <div style="position: absolute; width: 100vw; height: 100vh; z-index: -1;" id="layer1" 
+        display="inline-block" align="center" vertical-align="middle"></div>
+    <table>
+        <tr>
+            <button id="newGame" onclick="window.location.reload()">NEW GAME</button>
+        </tr>
+        <tr id="gameArea">
+            <table align="center">
+                <tr id="tr01">
+                    <td id="cell1">
+                        <button id="btn0" class="gameBtn" onclick="mainFunction('btn0')"></button>
+                    </td>
+                    <td id="cell2">
+                        <button id="btn1" class="gameBtn" onclick="mainFunction('btn1')"></button>
+                    </td>
+                    <td id="cell3">
+                        <button id="btn2" class="gameBtn" onclick="mainFunction('btn2')"></button>
+                    </td>
+                </tr>
+                <tr id="tr02">
+                    <td id="cell4">
+                        <button id="btn3" class="gameBtn" onclick="mainFunction('btn3')"></button>
+                    </td>
+                    <td id="cell5">
+                        <button id="btn4" class="gameBtn" onclick="mainFunction('btn4')"></button>
+                    </td>
+                    <td id="cell6">
+                        <button id="btn5" class="gameBtn" onclick="mainFunction('btn5')"></button>
+                    </td>
+                </tr>
+                <tr id="tr03">
+                    <td id="cell7">
+                        <button id="btn6" class="gameBtn" onclick="mainFunction('btn6')"></button>
+                    </td>
+                    <td id="cell8">
+                        <button id="btn7" class="gameBtn" onclick="mainFunction('btn7')"></button>
+                    </td>
+                    <td id="cell9">
+                        <button id="btn8" class="gameBtn" onclick="mainFunction('btn8')"></button>
+                    </td>
+                </tr>
+            </table>
+        </tr><br>
+        <tr align="center">
+            <div id="winning"></div>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

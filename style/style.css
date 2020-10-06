@@ -1,0 +1,80 @@
+:root {
+    --main-bg-color: rgb(28, 3, 75);
+}
+html{
+    background-color: rgb(119, 228, 228);
+    background-image: url(img/wall.jpg);    
+    background: linear-gradient(rgba(10,6,66,1) 0%, rgba(71,119,213,1) 50%, rgba(10,6,66,1) 100%);      
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body{
+    overflow: hidden; /* Hide scrollbars */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(197, 196, 192);
+    font-size: 6vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    /* background: linear-gradient(90deg, rgba(10,6,66,1) 0%, rgba(71,119,213,1) 49%, rgba(10,6,66,1) 100%); */
+    /* background: linear-gradient(rgba(10,6,66,1) 0%, rgba(71,119,213,1) 50%, rgba(10,6,66,1) 100%); */
+    
+    /* background-image: linear-gradient(rgb(10,6,66) rgb(71,119,213) rgba(10,6,66)); */
+    
+}
+#layer1{
+    background: linear-gradient(90deg, rgba(10,6,66,1) 0%, rgba(71,119,213,1) 49%, rgba(10,6,66,1) 100%);
+    opacity: 0.1;
+}
+button{
+    box-shadow: 5px 5px 3px #8391d3;
+}
+#gameArea{
+    text-align: center;
+}
+.gameBtn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1vh;
+    font-size: 8vh;
+    font-weight: bold;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 50%;
+}
+#newGame{
+    position: relative;
+    z-index: 100;
+    font-size: 4vh;
+    font-weight: 600;
+    color: rgb(197, 196, 192);
+    border-radius: 30%;
+    margin: 5vh;
+    padding: 2vh;
+    background: linear-gradient(rgba(10,6,66,1) 0%, rgba(71,119,213,1) 50%, rgba(10,6,66,1) 100%);
+}
+
+            /* for single border */
+#cell1, #cell2, #cell4, #cell5{
+    border-right: 8px solid var(--main-bg-color);
+    border-bottom: 8px solid var(--main-bg-color);
+}
+#cell3, #cell6{
+    border-bottom: 8px solid var(--main-bg-color);
+}
+#cell7, #cell8{
+    border-right: 8px solid var(--main-bg-color);
+}
+
+            /* for doble border */
+/* #cell1, #cell2, #cell4, #cell5, #cell7, #cell8{
+    border-right: 8px solid var(--main-bg-color);
+}
+#cell3, #cell2, #cell6, #cell5, #cell9, #cell8{
+    border-left: 8px solid var(--main-bg-color);
+}
+#cell1, #cell2, #cell4, #cell5, #cell3, #cell6{
+    border-bottom: 8px solid var(--main-bg-color);
+}
+#cell6, #cell9, #cell4, #cell5, #cell7, #cell8{
+    border-top: 8px solid var(--main-bg-color);
+} */
